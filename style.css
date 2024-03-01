@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Chakra+Petch:wght@500&family=Roboto+Mono&display=swap');
+
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    max-width: 63%;
+    display: flex;
+    color: black;
+    padding: 10px;
+    text-align: left;
+   
+}
+
+.header ,h4 {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+ 
+
+section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    
+ 
+}
+
+aside {
+    width: 35%;
+    height: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    font-family: 'Chakra Petch', sans-serif;
+    display: block;
+    padding: 10px 0 10px 70px;
+    text-decoration: none;
+    color: black;
+    font-size: 70px;
+    font-weight: 400;
+    transition: 0.1s ease-in;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    width: 65%;
+    height: 0.1em;
+    opacity: 0;
+    transition: opacity 300ms, transform 200ms;
+}
+
+/* Home Page */
+a.home::after {
+    background-color: #E3651D;
+}
+
+/* Builds Page */
+a.build::after {
+    background-color: #AD9A31;
+}
+
+/* Blogs Page */
+a.blogs::after {
+    background-color: #00BF90;
+}
+
+/* About Page */
+a.me::after {
+    background-color: #7117C1;
+}
+
+a:hover::after,
+a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+/* Slide in */
+li:nth-child(2) a {
+    overflow: hidden;
+}
+
+
+.tagline {
+    background-color: #E3651D;
+    height: 100%px;
+    width: 600px;
+    font-size: 45px;
+    margin-left: 25px;
+    color: #FFFFFF ;
+      
+
+}
+
+
+.tagline h1 {
+    padding-left: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    
+    
+}
+
+img {
+    margin-left: 25px;
+}
+
+
+.about {
+    background-color: #7117C1;
+    height: 100%px;
+    width: 800px;
+    font-size: 20px;
+    margin-left: 15px;
+    color: #FFFFFF;
+
+}
+
+
+.about p {
+    padding: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+
+.blogline {
+    background-color: #00BF90;
+    height: 100%px;
+    width: 700px;
+    font-size: 35px;
+    margin-left: 25px;
+    color: #FFFFFF;
+      
+
+}
+
+.blogline h1 {
+    padding-left: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+.buildline {
+    background-color: #AD9A31;
+    height: 100%px;
+    width: 500px;
+    font-size: 45px;
+    margin-left: 25px;
+    color: #FFFFFF ;
+      
+
+}
+
+
+.buildline h1 {
+    padding-left: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+.aboutline {
+    background-color: #7117C1;
+    height: 100%px;
+    width: 500px;
+    font-size: 45px;
+    margin-left: 25px;
+    color: #FFFFFF ;
+      
+
+}
+
+
+.aboutline h1 {
+    padding-left: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+.bio {
+
+    background-color: #7117C1;
+    height: 100%px;
+    width: 800px;
+    font-size: 20px;
+    margin-left: 25px;
+    color: #FFFFFF ;
+    padding: 10px;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+.show {
+    background-image: url(images/glass.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #AD9A31;
+    height: 230px;
+    width: 300px;
+
+    color: #AD9A31;
+    font-size: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+.show h4 {
+    margin-left: 20px;
+}
+
+.show img {
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+ 
+}
+
+
+.show a {
+    text-decoration: none;
+}
+
+.show:hover {
+    transition: 0.7s ease-in-out;
+}
+
+.projects {
+    max-width: 850px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    justify-content: space-evenly; /* Distribute items evenly along the main axis */
+}
+
+.homefooter {
+    background-color: #E3651D;
+    height: 40px;
+    width: 100%;
+}
+
+.buildfooter {
+    background-color:#AD9A31;
+    height: 40px;
+    width: 100%;
+}
+
+.blogfooter {
+    background-color:#00BF90;
+    height: 40px;
+    width: 100%;
+}
+.aboutfooter {
+    background-color:#7117C1;
+    height: 40px;
+    width: 100%;
+}
+
+.blogbox {
+    border: 2px solid black;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+button {
+    padding: 5px;
+    background-color:#00BF90 ;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 15px;
+
+}
